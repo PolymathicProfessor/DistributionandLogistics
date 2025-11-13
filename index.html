@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 11: Physical Distribution & B2B Markets - Infographic</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon {
+            font-size: 1.2em;
+        }
+
+        .card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #764ba2;
+            margin-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .grid-item {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #667eea30;
+        }
+
+        .grid-item h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        tbody tr:hover {
+            background: #e9ecef;
+        }
+
+        .list-item {
+            padding: 10px;
+            margin: 5px 0;
+            background: white;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .list-item::before {
+            content: "✓";
+            background: #667eea;
+            color: white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #667eea30 0%, #764ba230 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #764ba2;
+        }
+
+        .discussion-section {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+        }
+
+        .discussion-question {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            border-left: 5px solid #ff6b6b;
+        }
+
+        .discussion-question h3 {
+            color: #ff6b6b;
+            margin-bottom: 10px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin: 5px;
+        }
+
+        .flow-diagram {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .flow-box {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin: 10px;
+            text-align: center;
+            min-width: 150px;
+        }
+
+        .arrow {
+            font-size: 2em;
+            color: #667eea;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+
+        .footer {
+            background: #2d3748;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📦 Chapter 11: Physical Distribution & B2B Markets</h1>
+            <p>A Comprehensive Guide to Distribution Channels, Logistics & Business Markets</p>
+        </div>
+
+        <div class="content">
+            <!-- Distribution Channels Section -->
+            <div class="section">
+                <h2 class="section-title"><span class="icon">📦</span> Distribution Channels Overview</h2>
+                
+                <div class="card">
+                    <h3>What is a Distribution Channel?</h3>
+                    <p>A series of firms/individuals that move products from producer to final customer</p>
+                    <div style="margin-top: 15px;">
+                        <span class="badge">Direct Channel: No intermediaries</span>
+                        <span class="badge">Indirect Channel: Uses wholesalers, retailers, agents</span>
+                    </div>
+                </div>
+
+                <div class="highlight">
+                    <h3 style="margin-bottom: 15px;">🎯 Key Functions:</h3>
+                    <div class="list-item">Time, Place & Ownership Utility</div>
+                    <div class="list-item">Breaking Bulk - buying large quantities, selling smaller amounts</div>
+                    <div class="list-item">Creating Assortments - variety of products in one location</div>
+                    <div class="list-item">Transportation & Storage</div>
+                    <div class="list-item">Communication & Transaction Support</div>
+                    <div class="list-item">Risk-Taking - bearing financial risks of inventory</div>
+                </div>
+            </div>
+
+            <!-- Types of Intermediaries Section -->
+            <div class="section">
+                <h2 class="section-title"><span class="icon">🏭</span> Types of Intermediaries</h2>
+                
+                <div class="grid">
+                    <div class="grid-item">
+                        <h4>Merchant Wholesalers (Take Title)</h4>
+                        <p><strong>Full-Service:</strong> Delivery, credit, repairs, advertising</p>
+                        <p style="margin-top: 10px;"><strong>Limited-Service:</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 5px;">
+                            <li>Cash-and-carry wholesalers</li>
+                            <li>Truck jobbers</li>
+                            <li>Drop shippers</li>
+                            <li>Mail-order wholesalers</li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-item">
+                        <h4>Agents & Brokers (Don't Take Title)</h4>
+                        <ul style="margin-left: 20px;">
+                            <li>Manufacturers' agents/reps</li>
+                            <li>Selling agents</li>
+                            <li>Commission merchants</li>
+                            <li>Merchandise brokers</li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-item">
+                        <h4>Manufacturer-Owned</h4>
+                        <ul style="margin-left: 20px;">
+                            <li>Sales branches (carry inventory)</li>
+                            <li>Sales offices (no inventory)</li>
+                            <li>Showrooms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Distribution Strategies Section -->
+            <div class="section">
+                <h2 class="section-title"><span class="icon">🎯</span> Distribution Strategies</h2>
+                
+                <h3 style="color: #764ba2; margin-bottom: 15px;">Distribution Intensity</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Intensive</th>
+                            <th>Selective</th>
+                            <th>Exclusive</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Maximum coverage</td>
+                            <td>Moderate coverage</td>
+                            <td>Single outlet</td>
+                        </tr>
+                        <tr>
+                            <td>All possible retailers</td>
+                            <td>Selected retailers</td>
+                            <td>Limited region</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Example:</strong> Gum, milk</td>
+                            <td><strong>Example:</strong> Appliances</td>
+                            <td><strong>Example:</strong> Luxury cars</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="color: #764ba2; margin: 30px 0 15px 0;">Marketing Systems</h3>
+                <div class="grid">
+                    <div class="grid-item">
+                        <h4>Conventional</h4>
+                        <p>Members work independently</p>
+                    </div>
+                    <div class="grid-item">
+                        <h4>Vertical Marketing System (VMS)</h4>
+                        <p>Formal cooperation</p>
+                        <ul style="margin-left: 20px; margin-top: 5px;">
+                            <li>Administered VMS</li>
+                            <li>Corporate VMS (single ownership)</li>
+                            <li>Contractual VMS (franchises)</li>
+                        </ul>
+                    </div>
+                    <div class="grid-item">
+                        <h4>Horizontal</h4>
+                        <p>Firms at same level cooperate</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logistics Section -->
+            <div class="section">
+                <h2 class="section-title"><span class="icon">🚛</span> Logistics & Supply Chain</h2>
+                
+                <h3 style="color: #764ba2; margin-bottom: 15px;">5 Functions of Logistics</h3>
+                <div class="flow-diagram">
+                    <div class="flow-box">
+                        <strong>1. Order Processing</strong>
+                        <p style="font-size: 0.9em; margin-top: 5px;">Order → Shipment</p>
+                    </div>
+                    <span class="arrow">→</span>
+                    <div class="flow-box">
+                        <strong>2. Warehousing</strong>
+                        <p style="font-size: 0.9em; margin-top: 5px;">Storing goods</p>
+                    </div>
+                    <span class="arrow">→</span>
+                    <div class="flow-box">
+                        <strong>3. Materials Handling</strong>
+                        <p style="font-size: 0.9em; margin-top: 5px;">Moving products</p>
+                    </div>
+                    <span class="arrow">→</span>
+                    <div class="flow-box">
+                        <strong>4. Transportation</strong>
+                        <p style="font-size: 0.9em; margin-top: 5px;">Physical movement</p>
+                    </div>
+                    <span class="arrow">→</span>
+                    <div class="flow-box">
+                        <strong>5. Inventory Control</strong>
+                        <p style="font-size: 0.9em; margin-top: 5px;">Optimal stock</p>
+                    </div>
+                </div>
+
+                <h3 style="color: #764ba2; margin: 30px 0 15px 0;">Transportation Modes Comparison</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mode</th>
+                            <th>Best For</th>
+                            <th>Speed</th>
+                            <th>Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>🚂 Rail</td>
+                            <td>Heavy/bulky items</td>
+                            <td>Moderate</td>
+                            <td>Average</td>
+                        </tr>
+                        <tr>
+                            <td>🚢 Water</td>
+                            <td>Large/bulky goods</td>
+                            <td>Slow</td>
+                            <td>Low</td>
+                        </tr>
+                        <tr>
+                            <td>🚚 Truck</td>
+                            <td>Consumer goods</td>
+                            <td>Fast</td>
+                            <td>High (short)</td>
+                        </tr>
+                        <tr>
+                            <td>✈️ Air</td>
+                            <td>High-value items</td>
+                            <td>Fastest</td>
+                            <td>Highest</td>
+                        </tr>
+                        <tr>
+                            <td>🔧 Pipeline</td>
+                            <td>Oil/gas/chemicals</td>
+                            <td>Slow</td>
+                            <td>Lowest</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="card" style="margin-top: 20px;">
+                    <h3>📊 Key Metric: Inventory Turnover</h3>
+                    <p>Number of times inventory cycles through per year</p>
+                </div>
+            </div>
+
+            <!-- B2B Markets Section -->
+            <div class="section">
+                <h2 class="section-title"><span class="icon">🏢</span> Business-to-Business (B2B) Markets</h2>
+                
+                <h3 style="color: #764ba2; margin-bottom: 15px;">B2B vs Consumer Markets</h3>
+                <div class="grid">
+                    <div class="grid-item">
+                        <h4>B2B Characteristics</h4>
+                        <div class="list-item">Fewer customers, larger purchases</div>
+                        <div class="list-item">Multiple buyers in buying center</div>
+                        <div class="list-item">Geographic concentration</div>
+                        <div class="list-item">Professional purchasers</div>
+                        <div class="list-item">Derived demand</div>
+                        <div class="list-item">Inelastic demand</div>
+                        <div class="list-item">Fluctuating demand</div>
+                    </div>
+
+                    <div class="grid-item">
+                        <h4>The Buying Center Roles</h4>
+                        <p><strong>🎯 Initiator:</strong> Recognizes need</p>
+                        <p><strong>👤 User:</strong> Will use the product</p>
+                        <p><strong>🚪 Gatekeeper:</strong> Controls information flow</p>
+                        <p><strong>💡 Influencer:</strong> Provides expertise</p>
+                        <p><strong>✅ Decider:</strong> Makes final decision</p>
+                        <p><strong>💰 Buyer:</strong> Executes purchase</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buyclass Framework Section -->
+            <div class="section">
+                <h2 class="section-title"><span class="icon">📊</span> Buyclass Framework</h2>
+                
+                <div class="grid">
+                    <div class="grid-item">
+                        <h4>Straight Rebuy</h4>
+                        <ul style="margin-left: 20px;">
+                            <li>Routine repurchase</li>
+                            <li>Same supplier</li>
+                            <li>Minimal effort</li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-item">
+                        <h4>Modified Rebuy</h4>
+                        <ul style="margin-left: 20px;">
+                            <li>Shopping for better terms</li>
+                            <li>Some evaluation needed</li>
+                            <li>Moderate effort</li>
+                        </ul>
+                    </div>
+
+                    <div class="grid-item">
+                        <h4>New-Task Buy</h4>
+                        <ul style="margin-left: 20px;">
+                            <li>First-time purchase</li>
+                            <li>High uncertainty</li>
+                            <li>Maximum effort required</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- B2B E-Commerce Section -->
+            <div class="section">
+                <h2 class="section-title"><span class="icon">💻</span> B2B E-Commerce</h2>
+                
+                <div class="grid">
+                    <div class="grid-item">
+                        <h4>Intranets</h4>
+                        <p>Internal network for employees</p>
+                    </div>
+
+                    <div class="grid-item">
+                        <h4>Extranets</h4>
+                        <p>Extended access for select partners/suppliers</p>
+                    </div>
+
+                    <div class="grid-item">
+                        <h4>Security Concerns</h4>
+                        <ul style="margin-left: 20px;">
+                            <li>🔐 Authentication</li>
+                            <li>🛡️ Firewalls</li>
+                            <li>🔒 Encryption</li>
+                            <li>⚠️ Malware/spyware protection</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modern Trends Section -->
+            <div class="section">
+                <h2 class="section-title"><span class="icon">🌟</span> Modern Distribution Trends</h2>
+                
+                <div class="highlight">
+                    <div class="list-item">Disintermediation - Eliminating intermediaries</div>
+                    <div class="list-item">Just-in-Time (JIT) - Delivery exactly when needed</div>
+                    <div class="list-item">Cross-Docking - Direct transfer between trucks</div>
+                    <div class="list-item">Reverse Logistics - Returns, recycling, waste disposal</div>
+                    <div class="list-item">Subscription Boxes - Recurring delivery model</div>
+                    <div class="list-item">AI & Autonomous Vehicles - Technology disruption</div>
+                </div>
+            </div>
+
+            <!-- Discussion Questions Section -->
+            <div class="discussion-section">
+                <h2 style="text-align: center; margin-bottom: 25px; color: #ff6b6b;">💭 Discussion Questions for Group Work</h2>
+                
+                <div class="discussion-question">
+                    <h3>Question 1: Testing vs. Forecasting</h3>
+                    <p>Consider a company like Shein that uses minimal initial orders to test products before scaling up. What are the advantages and disadvantages of this approach compared to traditional bulk forecasting? How might this impact inventory costs, customer satisfaction, and environmental sustainability?</p>
+                </div>
+
+                <div class="discussion-question">
+                    <h3>Question 2: Gig Economy Ethics</h3>
+                    <p>Many companies now use "gig economy" workers for last-mile delivery. Discuss the ethical implications of this practice. What responsibilities should companies have regarding fair compensation, worker safety, and job security for gig workers in their distribution networks?</p>
+                </div>
+
+                <div class="discussion-question">
+                    <h3>Question 3: Distribution Strategy Selection</h3>
+                    <p>A manufacturer must choose between intensive, selective, and exclusive distribution for a new high-end smartwatch. Which strategy would you recommend and why? Consider factors like brand image, pricing control, customer service, and market coverage in your answer.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>📚 Chapter 11: Physical Distribution Concepts and Business-to-Business Markets</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Marketing Principles | Educational Resource</p>
+        </div>
+    </div>
+</body>
+</html>
